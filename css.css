@@ -1,0 +1,118 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+
+/* desktop */
+body{
+	width: 100%; 
+	height: 100%; 
+	margin: 0; 
+	background: #4e4342;
+	font-family: 'Varela Round', sans-serif;
+}
+
+
+h1{
+	font-size: 40px; 
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFF; 
+	letter-spacing: 5px; 
+	line-height: 60px; 
+}
+
+
+p{
+	font-size: 22px; 
+	text-align: center;
+	color: #FFF; 
+	letter-spacing: 2px; 
+	padding-top: 5px; 
+	line-height: 40px; 
+}
+
+
+button{
+	background: #4e4342; 
+	border: 1px solid #4e4342; 
+}
+
+
+.conteudo{
+	margin-top: 100px; 
+}
+
+
+#prenda{
+	padding-top: 20px;
+}
+
+
+/* esconder coração antes de se clicar no botão */ 
+#coracao{
+	display: none;
+}
+
+
+/* ícone prenda */
+.fa-gift{
+	font-size: 160px; 
+	color: #FFF; 
+
+	/* cursor com sinal mão */
+	cursor: pointer; 
+
+	/* animação. a mesma velocidade do início ao fim. estar sempre a repetir */
+    animation: oferecer 4s linear infinite;
+}
+
+
+/* animação prenda */
+@keyframes oferecer{
+   0% {transform:translateY(0)}
+   25% {transform:translateY(-10px)}
+   50% {transform:translateY(0)}
+   75% {transform:translateY(-10px)}
+   100% {transform:translateY(0)}
+}
+
+
+/* ícone coração */
+.fa-heart{
+	font-size: 400px; 
+	color: #F51455;
+
+	/* cursor com sinal proibido */
+	cursor: not-allowed; 
+
+	/* animação */  
+	animation: amor 1s linear infinite; 	
+}
+
+
+/* animação coração */
+@keyframes amor{
+	0% {transform: scale(1)}
+	25% {transform: scale(0.8)}
+	50% {transform: scale(0.8)}
+	75% {transform: scale(0.8)}
+	100% {transform: scale(1)}
+} 
+
+
+::selection{
+	background: #FFF; 
+	color: #FFC0BE; 
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 800px){
+	.conteudo{margin-top: 70px;}
+	h1{margin-left: 20px; margin-right: 20px;}
+	p{margin-left: 20px; margin-right: 20px;}
+	.fa-heart{font-size: 200px; margin-top: 100px;}
+} 
+
+

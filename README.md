@@ -1,6 +1,3 @@
-# 🎁 Regalo para Neyma  
-
-Este es un pequeño proyecto web interactivo creado con HTML, CSS y JavaScript, diseñado como una sorpresa especial. 💖  
 
 ## 🚀 Tecnologías Utilizadas  
 - HTML5  
